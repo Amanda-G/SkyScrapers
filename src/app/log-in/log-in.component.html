@@ -1,0 +1,14 @@
+
+<div class="loginbox">
+  <img src="../../assets/avatar.png" class="avatar">
+  <h1> Login Here</h1>
+  <form>
+    <p>Username</p>
+    <input type="text" name="username" placeholder="Enter Username" [(ngModel)]="logUserName">
+    <p>Password</p>
+    <input type="password" name="password" placeholder="Enter Password" [(ngModel)]="logPassword">
+    <input routerLink="../home" type="submit" name="" value="Login" (click)="printLogin()">
+    <a href="#">Forgot Password?</a><br>
+    <a href="#" routerLink="../signup">Sign Up</a>
+  </form>
+</div>
